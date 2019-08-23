@@ -2,7 +2,7 @@
 
 Source code for the paper 'A Global-local Embedding Module for Fashion Landmark Detection'
 
-Authors : Sumin Lee, Sungchan Oh, Chanho Jung, Changick Kim
+Authors : [Sumin Lee](https://sites.google.com/view/suminlee/), Sungchan Oh, Chanho Jung, Changick Kim
 
 In ICCV 2019 Workshop [Computer Vision for Fashion, Art, and Design](https://sites.google.com/view/cvcreative/home?authuser=0)
 
