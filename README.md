@@ -7,6 +7,29 @@ Authors : [Sumin Lee](https://sites.google.com/view/suminlee/), Sungchan Oh, Cha
 Accepted to ICCV 2019 Workshop [Computer Vision for Fashion, Art, and Design](https://sites.google.com/view/cvcreative/home?authuser=0)
 
 
+### Requirements
+- Python 3
+- Pytorch >= 0.4.1
+- torchvision
+
+### Quick Start
+
+1. Download the datasets
+* Deepfashion [[download](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/AttributePrediction.html)]
+* FLD [[download](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/LandmarkDetection.html)]
+
+2. Train
+```
+python train.py --root [root_directory] --dataset [dataset_option] --glem [glem_option]
+```
+'root' and 'dataset' options are necessary.
+
+3. Evaluate
+```
+# You can run the file only for evaluation
+python train.py --root [root_directory] --dataset [dataset_option] --glem [glem_option] --evaluate True
+```
+
 --------------
 
 ### Abstract
@@ -17,8 +40,9 @@ Detecting fashion landmarks is a fundamental technique for visual clothing analy
 
 --------------
 
-### Dataset
-* Deepfashion [[download](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/AttributePrediction.html)]
-* FLD [[download](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/LandmarkDetection.html)]
+
+
+
+We refered the code in [[site](https://github.com/fdjingyuan/Deep-Fashion-Analysis-ECCV2018)].
 
 ### Citation
