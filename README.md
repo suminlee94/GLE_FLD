@@ -61,7 +61,7 @@ Detecting fashion landmarks is a fundamental technique for visual clothing analy
 |    [DLAN](https://arxiv.org/pdf/1708.02044.pdf)    	|  0.0570  	|  0.0611  	|  0.0672  	|  0.0647  	|    0.0703   	|    0.0694   	| 0.0624 	| 0.0627 	| 0.0643 	|
 |   [BCRNNs](http://web.cs.ucla.edu/~yuanluxu/publications/fashion_grammar_cvpr18.pdf)   	|  0.0415  	|  0.0404  	|  0.0496  	|  0.0449  	|    0.0502   	|    0.0523   	| 0.0537 	| 0.0551 	| 0.0484 	|
 | [Lie et al](http://openaccess.thecvf.com/content_ECCVW_2018/papers/11131/Liu_Deep_Fashion_Analysis_with_Feature_Map_Upsampling_and_Landmark-driven_Attention_ECCVW_2018_paper.pdf)  	|  0.0332  	|  0.0346  	|  0.0487  	|  0.0519  	|    0.0422   	|    0.0429   	| 0.0620 	| 0.0639 	| 0.0474 	|
-|    Ours    	|*80.0312**	|**0.0324**	|**000427**	|**0.0434**	|  **0.0361** 	|  **0.0373** 	|**0.0442**|**0.0475**|**0.0393**|
+|    Ours    	|**0.0312**	|**0.0324**	|**000427**	|**0.0434**	|  **0.0361** 	|  **0.0373** 	|**0.0442**|**0.0475**|**0.0393**|
 --------------
 
 
