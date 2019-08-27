@@ -21,13 +21,15 @@ Accepted to ICCV 2019 Workshop [Computer Vision for Fashion, Art, and Design](ht
 * Deepfashion [[download](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/AttributePrediction.html)]
 * FLD [[download](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/LandmarkDetection.html)]
 
-2. Train
+2. Unzip './Anno/info.zip' file.
+
+3. Train
 ```
 python train.py --root [root_directory] --dataset [dataset_option] --glem [glem_option]
 ```
 'root' and 'dataset' options are necessary.
 
-3. Evaluate
+4. Evaluate
 ```
 # You can run the file only for evaluation
 python train.py --root [root_directory] --dataset [dataset_option] --glem [glem_option] --evaluate True
