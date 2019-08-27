@@ -14,8 +14,10 @@ Accepted to ICCV 2019 Workshop [Computer Vision for Fashion, Art, and Design](ht
 - Pytorch >= 0.4.1
 - torchvision
 
-### Quick Start
 
+
+### Quick Start
+* We refered the code in [[site](https://github.com/fdjingyuan/Deep-Fashion-Analysis-ECCV2018)].
 #### 1. Download the datasets
 * Deepfashion [[download](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/AttributePrediction.html)]
 * FLD [[download](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/LandmarkDetection.html)]
@@ -66,8 +68,6 @@ Detecting fashion landmarks is a fundamental technique for visual clothing analy
 
 
 
-
-We refered the code in [[site](https://github.com/fdjingyuan/Deep-Fashion-Analysis-ECCV2018)].
 
 ### Citation
 Our paper will be published soon.
