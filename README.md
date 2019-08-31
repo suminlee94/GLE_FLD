@@ -1,6 +1,6 @@
 ## A Gobal-local Embedding Module for Fashion Landmark Detection
 
-Source code for the paper 'A Global-local Embedding Module for Fashion Landmark Detection'
+Source code for the paper '[A Global-local Embedding Module for Fashion Landmark Detection](https://arxiv.org/abs/1908.10548)'
 
 Authors : [Sumin Lee](https://sites.google.com/view/suminlee/), Sungchan Oh, Chanho Jung, Changick Kim
 
@@ -71,3 +71,4 @@ Detecting fashion landmarks is a fundamental technique for visual clothing analy
 
 ### Citation
 Our paper will be published soon.
+
