@@ -46,7 +46,7 @@ def main():
 
     # Load model
     print("Load the model...")
-    net = Network(dataset=args.dataset, flag=args.glem).cuda()
+    net = torch.nn.DataParallel(Network(dataset=args.dataset, flag=args.glem)).cuda()
     if not args.weight_file == None:
         weights = torch.load(args.weight_file)
         if args.update_weight:
@@ -106,13 +106,13 @@ def test(net, test_loader, epoch):
             if (i + 1) % 100 == 0:
                 print('Val Step [{}/{}]'.format(j + 1, test_step))
 
-            results = evaluator.evaluate()
-            print('Epoch {}/{}'.format(epoch + 1, args.epoch))
-            print('|  L.Collar  |  R.Collar  |  L.Sleeve  |  R.Sleeve  |   L.Waist  |   R.Waist  |    L.Hem   |   R.Hem    |     ALL    |')
-            print('|   {:.5f}  |   {:.5f}  |   {:.5f}  |   {:.5f}  |   {:.5f}  |   {:.5f}  |   {:.5f}  |   {:.5f}  |   {:.5f}  |'
-                  .format(results['lm_dist'][0], results['lm_dist'][1], results['lm_dist'][2], results['lm_dist'][3],
-                          results['lm_dist'][4], results['lm_dist'][5], results['lm_dist'][6], results['lm_dist'][7],
-                          results['lm_dist_all']))
+        results = evaluator.evaluate()
+        print('Epoch {}/{}'.format(epoch + 1, args.epoch))
+        print('|  L.Collar  |  R.Collar  |  L.Sleeve  |  R.Sleeve  |   L.Waist  |   R.Waist  |    L.Hem   |   R.Hem    |     ALL    |')
+        print('|   {:.5f}  |   {:.5f}  |   {:.5f}  |   {:.5f}  |   {:.5f}  |   {:.5f}  |   {:.5f}  |   {:.5f}  |   {:.5f}  |'
+              .format(results['lm_dist'][0], results['lm_dist'][1], results['lm_dist'][2], results['lm_dist'][3],
+                      results['lm_dist'][4], results['lm_dist'][5], results['lm_dist'][6], results['lm_dist'][7],
+                      results['lm_dist_all']))
 
 
 if __name__ == '__main__':
