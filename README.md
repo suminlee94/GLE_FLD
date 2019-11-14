@@ -71,7 +71,12 @@ Detecting fashion landmarks is a fundamental technique for visual clothing analy
 
 ### Citation
 ```
-Sumin Lee, Sungchan Oh, Chanho Jung, and Changick Kim. "A Global-Local Embedding Module for Fashion Landmark Detection." Proceedings of the IEEE International Conference on Computer Vision Workshops. 2019.
-
+@inproceedings{lee2019global,
+  title={A Global-Local Embedding Module for Fashion Landmark Detection},
+  author={Lee, Sumin and Oh, Sungchan and Jung, Chanho and Kim, Changick},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision Workshops},
+  pages={0--0},
+  year={2019}
+}
 ```
 
