@@ -70,7 +70,8 @@ Detecting fashion landmarks is a fundamental technique for visual clothing analy
 
 
 ### Citation
-'''
-Lee, Sumin, et al. "A Global-Local Embedding Module for Fashion Landmark Detection." Proceedings of the IEEE International Conference on Computer Vision Workshops. 2019.
-'''
+```
+Sumin Lee, Sungchan Oh, Chanho Jung, and Changick Kim. "A Global-Local Embedding Module for Fashion Landmark Detection." Proceedings of the IEEE International Conference on Computer Vision Workshops. 2019.
+
+```
 
