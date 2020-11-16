@@ -86,8 +86,8 @@ class GlobalLocalEmbedding(nn.Module):
 
     def forward(self, x):
         y = self.non_local(x)
-        y = self.relu(self.bn1(self.conv1(x)))
-        y = self.relu(self.bn2(self.conv2(x)))
+        y = self.relu(self.bn1(self.conv1(y)))
+        y = self.relu(self.bn2(self.conv2(y)))
         return y
 
 class LandmarkUpsample(nn.Module):
