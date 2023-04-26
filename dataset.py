@@ -71,6 +71,16 @@ class Rescale(object):
 
         return img, landmarks
 
+class RandomFlip(object):
+
+    def __call__(self, image, landmarks):
+        h, w = image.shape[:2]
+        if np.random.rand() > 0.5:
+            image = np.fliplr(image)
+            landmarks[:, 0] = w - landmarks[:, 0]
+
+        return image, landmarks
+
 class LandmarksNormalize(object):
 
     def __call__(self, image, landmark_pos):
@@ -108,6 +118,7 @@ class DeepFashionDataset(torch.utils.data.Dataset):
         self.root = root
         self.to_tensor = transforms.ToTensor()
         self.bbox_crop = BBoxCrop()
+        self.random_flip = RandomFlip()
         self.rescale224square = Rescale((224, 224))
         self.normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                               std=[0.229, 0.224, 0.225])
